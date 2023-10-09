@@ -1,0 +1,10 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{Singular Foliations}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Definition}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Idea: Relation to gauge theory}{10}{0}{1}
+\beamer@sectionintoc {2}{Curved Yang-Mills gauge theory}{12}{0}{2}
+\beamer@subsectionintoc {2}{1}{Principal bundles based on Lie group bundle actions}{12}{0}{2}
+\beamer@subsectionintoc {2}{2}{Connection and curvature}{17}{0}{2}
+\beamer@subsectionintoc {2}{3}{Associated bundles and connections}{19}{0}{2}
+\beamer@sectionintoc {3}{Foliations as associated bundles}{21}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{33}{0}{4}

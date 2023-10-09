@@ -1,0 +1,904 @@
+\documentclass[hyperref={pdfpagelabels=false}]{beamer}
+\usepackage{CJKutf8}
+\usepackage[english]{babel}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage[makeroom]{cancel} %for crossing symbols
+\usepackage{leftindex} %For leftindex, making it possible to have nicely aligned left subscripts
+%\usepackage{calligra}
+%\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n} %For small \mathcal letters
+\makeatletter
+\DeclareFontEncoding{LS1}{}{}
+\DeclareFontSubstitution{LS1}{stix}{m}{n}
+\DeclareMathAlphabet{\mathKel}{LS1}{stixscr}{m}{n}
+\DeclareMathAlphabet{\mathcal}{LS1}{stixscr}{m}{n}
+\usepackage{amsthm}
+\usepackage{amsmath}
+%\usepackage{mathabx}
+\usepackage{stmaryrd}
+\usepackage{amsbsy}
+\usepackage{dsfont}
+\usepackage{mathtools} %für mathclap und coloneqq
+%\usepackage{amsbsy}
+\usepackage{mleftright} %Distanz zu \left \right weg
+\usepackage{tikz-cd}
+
+\usepackage{tabularx} %Automatic line break of tables using X instead c l r
+%\usepackage{longtable} %table auf mehreren Seiten
+%\usepackage{ltxtable} %Combination of both above
+\usepackage{xcolor, colortbl}
+
+%Für die ganzen Diagramme
+\usepackage{pgfplots}
+\usepackage{graphicx} %Für raisebox, vertical displacement of figures
+\usetikzlibrary{decorations.markings, decorations.text,calc,arrows.meta}
+
+\definecolor{Gray}{gray}{0.85}
+%\usepackage[style=authortitle-icomp]{biblatex}
+%\usepackage[babel,german=guillemets]{csquotes}
+
+\setcounter{tocdepth}{1}
+%\setcounter{tocdepth}{5}
+%\setcounter{secnumdepth}{4}
+%\setcounter{secnumdepth}{5}
+\usepackage[backend=biber, style=numeric]{biblatex}
+\addbibresource{Literatur.bib}
+\newcommand{\footlineextra}[1]{
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[yshift=2ex,anchor=south west] at (current page.south west) {\usebeamerfont{author in head/foot}\hspace{2ex}#1};
+    \end{tikzpicture}
+}
+
+\newcommand\insertreferences{}
+\setbeamertemplate{footline}{%
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.09\paperwidth, ht=5ex,dp=1ex,center, sep=1.4ex]{author in head/foot}%
+    \usebeamerfont{author in head/foot}
+		%\vfill
+		%Sources
+		%\vfill
+		Sources
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.91\paperwidth,ht=5ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}
+    \insertreferences
+
+  \end{beamercolorbox}
+}
+}
+
+
+\title{Classification of neighbourhoods of leaves of singular foliations}   
+\subtitle{joint work with Camille Laurent-Gengoux}   
+\author{Simon-Raphael Fischer} 
+\institute{\begin{CJK*}{UTF8}{bkai}國家理論科學研究中心\end{CJK*}}
+\date{4 September 2023} 
+%\date{Le lundi 31 mai 2021} 
+
+% zusaetzlich ist das usepackage{beamerthemeshadow} eingebunden 
+%\usepackage{beamerthemeIlmenau}
+%\usepackage{beamerthemeshadow}
+\usepackage{beamerthemeDarmstadt}
+
+%  \beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+%  sorgt dafuer das die Elemente die erst noch (zukuenftig) kommen 
+%  nur schwach angedeutet erscheinen 
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+% klappt auch bei Tabellen, wenn teTeX verwendent wird\ldots
+
+\beamertemplatenavigationsymbolsempty %Damit sind die kleinen Navigationssymbole unten weg
+
+%\usesectionheadtemplate{}{}
+%\usesubsectionheadtemplate{}{}
+
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bs{\begin{subequations}}
+\def\es{\end{subequations}}
+\def\ba#1\ea{\begin{align}#1\end{align}}
+\def\bes{\begin{equation*}}
+\def\ees{\end{equation*}}
+\def\bas#1\eas{\begin{align*}#1\end{align*}}
+
+\AtBeginEnvironment{remark}{%
+  \setbeamercolor{block title}{use=example text,fg=black,bg=yellow!75!black}
+  \setbeamercolor{block body}{parent=normal text,use=block title example,bg=yellow!10}
+}
+
+\renewcommand{\qedsymbol}{}
+\theoremstyle{plain}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remarks}
+\newtheorem*{idea}{Idea}
+\newtheorem*{motivation}{Motivation}
+\newtheorem*{summary}{Summary}
+\newtheorem*{situation}{Situation}
+\newtheorem*{lab}{Situation: Lie algebra bundles}
+\newtheorem*{question}{Question}
+\newtheorem*{fieldredefinition}{Field Redefinition}
+\newtheorem*{construction}{Construction}
+\newtheorem*{aim}{Aim}
+\newtheorem*{BackToTheRoots}{Sketch of construction}
+
+\AtBeginEnvironment{BackToTheRoots}{%
+  \setbeamercolor{block title}{use=example text,fg=black,bg=pink!75!black}
+  \setbeamercolor{block body}{parent=normal text,use=block title example,bg=pink!10}
+}
+
+%\theoremstyle{definition}
+%\newtheorem{definition}[theorem]{Definition}
+%\newtheorem*{SecondIn}{Second Inequality}
+
+%mathrm mit mathup ersetzen, damit die font passt
+\renewcommand\familydefault{\sfdefault} %comment to see the difference
+\DeclareMathAlphabet      {\mathup}{OT1}{\familydefault}{m}{n}
+
+
+\begin{document}
+
+
+\begin{frame}
+\thispagestyle{empty}
+\titlepage
+\end{frame} 
+
+
+{
+\setbeamertemplate{footline}{}
+\begin{frame}
+\frametitle{Table of contents}
+\tableofcontents
+\end{frame} 
+}
+
+\section{Singular Foliations}
+
+{
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.09\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}
+		Sources
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.91\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}
+		Right diagram made by Mark J.D.\ Hamilton.
+  \end{beamercolorbox}%
+  %\begin{beamercolorbox}[wd=.175\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    %\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    %%\insertframenumber{} 
+		%%/ \inserttotalframenumber\hspace*{2ex} 
+  %\end{beamercolorbox}
+	}%
+  \vskip0pt%
+}
+\begin{frame}
+\begin{tikzpicture}
+\coordinate (O) at (0,0);
+%\foreach \j in {1,...,3} \draw (O) circle (3.5-\j);
+%\foreach \k/\text in {0/Should be here any!,1/There is a way?,2/Wee} \draw[decoration={text along path,reverse path,text align={align=center},text={\text}},decorate] (2.6-\k,0) arc (0:180:2.6-\k);
+\foreach \k in {1,...,4}\pgfmathparse{12*\k} \draw[fill=blue!\pgfmathresult] (O) circle (3.6-0.8*\k) node at (0, 3) {$\mathbb{S}^n$};
+%\foreach \k/\text in {0/{$S^n$},1/,2/,3/} \draw[decoration={text along path,reverse path,text align={align=center},text={\text}},decorate] (2.9-0.8*\k,0) arc (0:180:2.9-0.8*\k);
+\fill (O) circle[radius=2pt];
+\begin{scope}[xshift=2.2cm, yshift=-1.8cm]
+\begin{axis}[ scale = 1,
+            hide axis,
+            %axis lines=middle,
+%            axis on top,
+%            axis line style={blue,dashed,thick},
+%            ymin=-2,ymax=2,
+%            xmin=-2,xmax=2,
+%            zmin=-2,zmax=2,
+            samples=40,
+            domain=0:360,
+            y domain=0:1.25,clip=false
+        ]
+        \addplot3 [surf, shader=flat, draw=black, fill=gray!10!white, z buffer=sort]
+           ({sin(x)*y}, {cos(x)*y}, {(y^2-1)^2});
+        \draw[blue,thick,dashed] (axis cs:0,0,0) -- (axis cs:1,0,0)
+                    node[below,font=\footnotesize]{};
+        \draw[blue,thick,-stealth] (axis cs:1,0,0) -- (axis cs:1.3,0,0)
+                    node[above,font=\footnotesize]{};
+        \draw[blue,thick,dashed] (axis cs:0,0,0) -- (axis cs:0,-1,0)
+                    node[left=2mm,font=\footnotesize]{}; %{Label} am Ende 
+        \draw[blue,thick,-stealth] (axis cs:0,-1,0) -- (axis cs:0,-1.5,0)
+                    node[right=1mm,font=\footnotesize]{};
+        \draw[blue,thick,dashed] (axis cs:0,0,0) -- (axis cs:0,0,1)
+                    %node[left=2mm,font=\footnotesize]{$\phi_{\text{RE}}$}
+                    ;
+        \draw[blue,thick,-stealth] (axis cs:0,0,1) -- (axis cs:0,0,1.3);
+\end{axis}
+\end{scope}
+%\draw[line width=2mm,>={Triangle[length=3mm,width=5mm]},->] (2.6,0) -- (3.8,0);
+\end{tikzpicture}
+\end{frame}
+}
+
+{
+\setbeamertemplate{footline}{}
+\begin{frame}
+\textbf{Singular Foliations:}
+
+\begin{itemize}
+	\item Gauge Theory \newline 
+	(Ex.: Singular foliation $\leftrightarrow$ Symmetry breaking $\rightarrow$ Higgs mechanism)
+	\item Poisson Geometry \newline (Singular foliation of symplectic leaves)
+	\item Lie groupoids and algebroids
+	\item Dirac structures
+	\item Generalised complex manifolds
+	\item Non-commutative geometry
+	\item $\dotsc$
+\end{itemize}
+
+\end{frame}
+}
+
+\renewcommand\insertreferences{{\tiny  Peter Stefan, Accessible sets, orbits, and foliations with singularities. \textit{Proc.\ London Math.\ Soc.}, 29, 1974.
+\newline
+Héctor J. Sussmann, Orbits of families of vector fields and integrability of distributions. \textit{Trans.\ Amer.\ Math.\ Soc.}, 180, 1973}}
+
+\subsection{Definition}
+
+\begin{frame}
+\begin{definition}[Smooth singular foliation]
+A \textbf{smooth singular foliation $\mathcal{F}$} on a smooth manifold is a subspace of $\mathfrak{X}_c(M)$ so that
+\begin{itemize}
+	\item it is \textbf{involutive},
+	\item it is \textbf{stable under $C^\infty(M)$-multiplication},
+	\item it is \textbf{locally finitely generated}.
+\end{itemize}
+\end{definition}
+\end{frame}
+
+\begin{frame}
+\begin{definition}[Smooth singular foliation]
+A \textbf{smooth singular foliation $\mathcal{F}$} on a smooth manifold is a subspace of $\mathfrak{X}_c(M)$ so that
+\begin{itemize}
+	\item it is \textbf{involutive}, \textit{i.e.\ $[\mathcal{F}, \mathcal{F}] \subset \mathcal{F}$},
+	\item it is \textbf{stable under $C^\infty(M)$-multiplication},
+	\item it is \textbf{locally finitely generated}.
+\end{itemize}
+\end{definition}
+\end{frame}
+
+\begin{frame}
+\begin{definition}[Smooth singular foliation]
+A \textbf{smooth singular foliation $\mathcal{F}$} on a smooth manifold is a subspace of $\mathfrak{X}_c(M)$ so that
+\begin{itemize}
+	\item it is \textbf{involutive}, \textit{i.e.\ $[\mathcal{F}, \mathcal{F}] \subset \mathcal{F}$},
+	\item it is \textbf{stable under $C^\infty(M)$-multiplication}, \textit{i.e.\ $fX \in \mathcal{F}$ for all $f \in C^\infty(M)$ and $X \in \mathcal{F}$},
+	\item it is \textbf{locally finitely generated}.
+\end{itemize}
+\end{definition}
+\end{frame}
+
+\begin{frame}
+\begin{definition}[Smooth singular foliation]
+A \textbf{smooth singular foliation $\mathcal{F}$} on a smooth manifold is a subspace of $\mathfrak{X}_c(M)$ so that
+\begin{itemize}
+	\item it is \textbf{involutive}, \textit{i.e.\ $[\mathcal{F}, \mathcal{F}] \subset \mathcal{F}$},
+	\item it is \textbf{stable under $C^\infty(M)$-multiplication}, \textit{i.e.\ $fX \in \mathcal{F}$ for all $f \in C^\infty(M)$ and $X \in \mathcal{F}$},
+	\item it is \textbf{locally finitely generated}, \textit{i.e.\ around each $p \in M$ there is an open neighbourhood $U$ and a finite family $\mleft( X^i \mright)_i^{r}$ ($X^i \in \mathcal{F}$) such that for all $X \in \mathcal{F}$ there are $f_i \in C^\infty(M)$ satisfying on $U$}.
+	\bas
+	X = \sum_i f_i X^i.
+	\eas
+\end{itemize}
+\end{definition}
+\end{frame}
+
+\begin{frame}
+\begin{remark}[Leaves]
+Following the flows in $\mathcal{F}$, this gives rise to a partition of connected immersed submanifolds in $M$.
+\end{remark}
+
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=.70\textwidth]{Foliation example.png}
+	\label{fig:Foliation example}
+\end{figure}
+
+
+\end{frame}
+
+%{
+%\setbeamertemplate{footline}
+%{
+  %\leavevmode%
+  %\hbox{%
+  %\begin{beamercolorbox}[wd=.09\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    %\usebeamerfont{author in head/foot}
+		%Sources
+  %\end{beamercolorbox}%
+  %\begin{beamercolorbox}[wd=.91\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    %\usebeamerfont{title in head/foot}
+		%Private communication with Camille Laurent-Gengoux.
+  %\end{beamercolorbox}%
+  %%\begin{beamercolorbox}[wd=.175\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    %%\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    %%%\insertframenumber{} 
+		%%%/ \inserttotalframenumber\hspace*{2ex} 
+  %%\end{beamercolorbox}
+	%}%
+  %\vskip0pt%
+%}
+%%\begin{frame}{Why finitely generated?}
+%
+%\begin{figure}[htbp]
+	%\centering
+		%\includegraphics[width=0.50\textwidth]{Infinite comb.png}
+	%\caption{Infinite Comb}
+	%\label{fig:Infinite comb}
+%\end{figure}
+%\end{frame}
+%}
+
+\subsection{Idea: Relation to gauge theory}
+
+\renewcommand\insertreferences{{\tiny Camille Laurent-Gengoux and Leonid Ryvkin, The neighborhood of a singular leaf. \newline \textit{Journal de l’{\'E}cole polytechnique-Math{\'e}matiques}, 8, 2021.}}
+
+\begin{frame}
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=1.00\textwidth]{Foliation connection.png}
+	\caption{$\mathcal{F}$-connections}
+	\label{fig:Foliation connection}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.50\textwidth]{Foliation connection.png}
+	\caption{$\mathcal{F}$-connections}
+	\label{fig:Foliation connection Zwei}
+\end{figure}
+
+\begin{theorem}[$\mathcal{F}$-connections]
+There is a connection on the normal bundle of a leaf $L$:
+\begin{itemize}
+	\item Horizontal vector fields are in $\mathcal{F}$.
+	\item Parallel transport $\mathup{PT}_\gamma$ has values in $\mathup{Sym}(\tau_l, \tau_{l^\prime})$.
+	\item For a contractible loop $\gamma_0$ at $l$: $\mathup{PT}_{\gamma_0}$ values in $\mathup{Inn}(\tau_l)$.
+\end{itemize}
+\end{theorem}
+
+\end{frame}
+
+\section{Curved Yang-Mills gauge theory}
+\subsection{Principal bundles based on Lie group bundle actions}
+{
+\setbeamertemplate{footline}{}
+\begin{frame}
+\textbf{Curved Yang-Mills gauge theories:}
+\begin{table}[h!]
+	\centering
+		\begin{tabular}{c c} 
+			%\rowcolor{gray}
+			Classical & Curved \\
+			%Infinitesimal & Lie algebra $\mathfrak{g}$ & LAB\footnote{LAB = Lie algebra bundle} $\mathcal{g}$ \\
+			%\rowcolor{Gray}
+			Lie group $G$ & \textcolor[rgb]{1,0.41,0.13}{Lie group bundle
+			%\footnote{LGB = Lie group bundle} 
+			$\mathcal{G}$}
+		\end{tabular}
+\end{table}
+
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&]
+	G \arrow{r} \& \mathcal{G} \arrow{d} \\
+	\& L
+	\end{tikzcd}
+\end{center}
+
+\end{frame}
+}
+
+\renewcommand\insertreferences{{\tiny  K. Mackenzie. General Theory of Lie Groupoids and Algebroids. \newline \textit{London Mathematical Society Lecture Note Series}, 213, 2005.}}
+
+\begin{frame}
+\begin{definition}[LGB actions]
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&, column sep = small, row sep = small]
+	 \& \mathcal{G} \arrow[bend right]{dl} \arrow{d}{\pi_{\mathcal{G}}} \\
+	\mathcal{T} \arrow{r}{\phi} \& L
+	\end{tikzcd}
+\end{center}
+A \textbf{right-action of $\mathcal{G}$ on $\mathcal{T}$} is a smooth map 
+%\bas
+$\mathcal{T} * \mathcal{G} \coloneqq \mathcal{T} \leftindex^{}_{\phi}\times_{\pi_{\mathcal{G}}} \mathcal{G} \to \mathcal{T}$,
+$(t, g) \mapsto t \cdot g$,
+%\eas
+satisfying the following properties:
+\ba\label{InvarianceOffUnderGAction}
+\phi(t \cdot g) &= \phi(t),\\
+(t \cdot g) \cdot h &= t \cdot (gh),\\
+t \cdot e_{\phi(t)} &= p
+\ea
+for all $t \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\phi(t)}$, where $e_{\phi(t)}$ is the neutral element of $\mathcal{G}_{\phi(t)}$.
+\end{definition}
+\end{frame}
+
+{
+\setbeamertemplate{footline}{}
+\begin{frame}
+\begin{definition}[Ehresmann/Yang-Mills connection, {[C.\ L.-G., S.-R.\ F.]}]
+A surjective submersion $\pi_{\mathcal{T}} \colon \mathcal{T} \to L'$ so that one has a commuting diagram
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&]
+	\mathcal{T} \arrow[swap]{d}{\pi_{\mathcal{T}}} \arrow{dr}{\phi} \& \arrow[bend right]{l} \mathcal{G} \arrow{d}{\pi_{\mathcal{G}}}
+    %\arrow{l} G 
+    \\
+	L' \arrow{r}{\Psi} \& L
+	\end{tikzcd}
+\end{center}
+\begin{enumerate}
+	\item \textbf{Ehresmann connection:} $\mathcal{G}$ preserving $\pi_{\mathcal{T}}$ and
+	\bas
+	\mathup{PT}_\gamma^{\mathcal{T}}(t \cdot g)
+	&=
+	\mathup{PT}_\gamma^{\mathcal{T}}(t)
+	\cdot
+	\mathup{PT}_{\Psi\circ\gamma}^{\mathcal{G}}(g)
+	\eas
+	\item \textbf{Yang-Mills connection:} Additionally
+	\bas
+	\mathup{PT}_{\gamma_0}^{\mathcal{T}}(t)
+	&=
+	t \cdot g_{\gamma_0}
+	\eas
+	for some $g_{\gamma_0} \in \mathcal{G}_{\phi(t)}$, where $\gamma_0$ is a contractible loop.
+\end{enumerate}
+\end{definition}
+\end{frame}
+
+\begin{frame}
+\begin{definition}[Multiplicative YM connection, {[S.-R.\ F.]}]
+On $\mathcal{G}$ there is also the notion of \textbf{multiplicative Yang-Mills connections}, that is,
+\bas
+\mathup{PT}_\gamma^{\mathcal{G}}(q \cdot g)
+&=
+\mathup{PT}_\gamma^{\mathcal{G}}(q)
+\cdot
+\mathup{PT}_{\gamma}^{\mathcal{G}}(g),
+\\
+\mathup{PT}_{\gamma_0}^{\mathcal{T}}(t)
+&=
+g_{\gamma_0} \cdot t \cdot g_{\gamma_0}^{-1}
+\eas
+\end{definition}
+\end{frame}
+}
+
+\renewcommand\insertreferences{{\tiny Ieke Moerdijk, Janez Mrcun. Introduction to Foliations and Lie Groupoids. \newline \textit{Cambridge Studies in Advanced Mathematics 91, Cambridge University Press, Cambridge}, 2003}}
+
+\begin{frame}
+\begin{definition}[Principal bundle]
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&]
+	\mathcal{P} \arrow{d}{\pi_{\mathcal{P}}} \arrow{dr}{\phi} \& \arrow[bend right]{l} \mathcal{G} \arrow{d}{\pi_{\mathcal{G}}}
+    %\arrow{l} G 
+    \\
+	L' \arrow{r}{\Psi} \& L
+	\end{tikzcd}
+\end{center}
+A surjective submersion $\pi_{\mathcal{P}}\colon \mathcal{P} \to L'$, with $\mathcal{G}$-action
+\bas
+\begin{matrix}
+	\textcolor[rgb]{1,0,0}{\xcancel{\mathcal{P} \times G}} &\to \mathcal{P} \\
+	\mathcal{P} * \mathcal{G} &
+\end{matrix}
+\eas
+simply transitive on $\pi_{\mathcal{P}}$-fibres of $\mathcal{P}$, and "suitable" atlas.
+\end{definition}
+\end{frame}
+
+%\subsection{Connection as horizontal distribution}
+
+%{
+%\setbeamertemplate{footline}{}
+%\begin{frame}{Connection on $\mathcal{P}$: Idea}
+%\begin{figure}
+%%\caption{Pushforwards via right-multiplication of tangent vectors}  
+%%\label{figure:fibre bundle}
+%\centering
+%\begin{tikzpicture}[scale=0.55]
+%\draw (0,-3.5) to[out=10,in=170] (4.25,-3.5) to[out=350,in=190] (8.5,-3.5);
+%\draw (1.25,2.5) to[out=280,in=90](1.5,0) to[out=270,in=80] (1.25,-2.5);
+%\filldraw [fill=gray!20!white, draw=white] (3.5,2.5) to[out=280,in=90](3.75,0) to[out=270,in=80] (3.5,-2.5) -- (5,-2.5)  to[out=80,in=270](5.25,0) to[out=90,in=280] (5,2.5) -- cycle;
+%\draw (4.25,2.5) to[out=280,in=95](4.41,1) to[out=275,in=85] (4.41,-1) to[out=265,in=80] (4.25,-2.5); %draw with middle section for precise point placement
+%
+%\draw (4,-1) node {\textcolor[rgb]{1,0,0}{$p$}};
+%\draw [<-, draw=blue] (5,1) to[out=275,in=85] (5,-1);
+%\draw (5.5,0) node {\textcolor[rgb]{0,0,1}{$\cdot g$}};
+%\filldraw [fill=red, draw=red] (4.41,1) circle (1pt);
+%\filldraw [fill=red, draw=red] (4.41,-1) circle (1pt);
+%\draw (5.75,2.5) to[out=280,in=90](6,0) to[out=270,in=80] (5.75,-2.5);
+%\draw (7.25,2.5) to[out=280,in=90](7.5,0) to[out=270,in=80] (7.25,-2.5);
+%\draw (2.75,2.475) to[out=280,in=90](3,0) to[out=270,in=80] (2.75,-2.475);
+%
+%%\draw (4.75,2) node {$\mathcal{P}_x$};
+%%\draw (4.95,1.5) node {$\cong G$};
+%\draw (-0.5,-3.5) node {$L^\prime$};
+%\draw (19.5,-3.5) node {$L$};
+%%\draw (5,2) node {$\mathcal{P}_U$};
+%\draw (3.5,-3.4) node {$($};
+%\filldraw [fill=red, draw=red] (4.25,-3.5) circle (1pt);
+%\draw (4.25,-4.5) node {\textcolor[rgb]{1,0,0}{$x \coloneqq \pi_{\mathcal{P}}(p)$}};
+%\draw (5,-3.6) node {$)$};
+%%\draw (4.25, -3) node {$U$};
+%\draw (0,0) node {$\mathcal{P}$};
+%\draw [->] (0,-0.4) -- (0,-3.1);
+%\draw (0.7,-1.75) node {$\pi_{\mathcal{P}}$};
+%\draw (3.5,1) node {\textcolor[rgb]{1,0,0}{$p \cdot g$}};
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\draw (10.5,-3.5) to[out=10,in=170] (14.75,-3.5) to[out=350,in=190] (19,-3.5); %hori M
+%\filldraw [fill=gray!20!white, draw=white] (14,2.5) to[out=280,in=90](14.25,0) to[out=270,in=80] (14,-2.5) -- (15.5,-2.5)  to[out=80,in=270](15.75,0) to[out=90,in=280] (15.5,2.5) -- cycle; %gray area
+%\draw (11.75,2.5) to[out=280,in=90](12,0) to[out=270,in=80] (11.75,-2.5); %vert line 1
+%\draw (14.75,2.5) to[out=280,in=90](15,0) to[out=270,in=80] (14.75,-2.5); %3
+%\draw (16.25,2.5) to[out=280,in=90](16.5,0) to[out=270,in=80] (16.25,-2.5); %4
+%\draw (17.75,2.5) to[out=280,in=90](18,0) to[out=270,in=80] (17.75,-2.5); %5
+%
+%\draw (13.25,2.475) to[out=280,in=90](13.5,0) to[out=270,in=80] (13.25,-2.475); %2
+%\filldraw [fill=blue, draw=blue] (15,0) circle (1pt);
+%\draw (15.5,0) node {\textcolor[rgb]{0,0,1}{$g$}};
+%
+%\draw (19,0) node {$\mathcal{G}$}; %These three lines are for LGB projection
+%\draw [->] (19,-0.4) -- (19,-3.1);
+%%\draw (18.5,-1.75) node {$\pi_{\mathcal{G}}$};
+%
+%%\draw (15.5,2) node {$\mathcal{G}_U$};
+%\draw (14,-3.4) node {$($};
+%\filldraw [fill=red, draw=red] (14.75,-3.5) circle (1pt);
+%\draw (14.75,-4.5) node {\textcolor[rgb]{1,0,0}{$y \coloneqq \phi(p)$}};
+%\draw (15.5,-3.6) node {$)$};
+%%\draw (14.75, -3) node {$U$};
+%
+%\path[<-] (8.5,0) edge [bend left] (11,0);
+%\end{tikzpicture}
+%\end{figure}
+%\pause
+%But:
+%\bas
+%&&&r_g: \mathcal{P}_x \to \mathcal{P}_x\\
+%&\Rightarrow&&\mathrm{D}_pr_g \text{ only defined on vertical structure}
+%\eas
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}{Connection on $\mathcal{P}$: Idea}
+%\begin{figure}
+%%\caption{Pushforwards via right-multiplication of tangent vectors}  
+%%\label{figure:fibre bundle part two}
+%\centering
+%\begin{tikzpicture}[scale=0.53]
+%\draw (0,-3.5) to[out=10,in=170] (4.25,-3.5) to[out=350,in=190] (8.5,-3.5);
+%\draw (1.25,2.5) to[out=280,in=90](1.5,0) to[out=270,in=80] (1.25,-2.5);
+%\filldraw [fill=gray!20!white, draw=white] (3.5,2.5) to[out=280,in=90](3.75,0) to[out=270,in=80] (3.5,-2.5) -- (5,-2.5)  to[out=80,in=270](5.25,0) to[out=90,in=280] (5,2.5) -- cycle;
+%\draw (4.25,2.5) to[out=280,in=95](4.41,1) to[out=275,in=85] (4.41,-1) to[out=265,in=80] (4.25,-2.5); %draw with middle section for precise point placement
+%
+%\draw (4,-1) node {\textcolor[rgb]{1,0,0}{$p$}};
+%\draw [<-, draw=blue] (5,1) to[out=275,in=85] (5,-1);
+%\draw [<-, draw=blue] (4.8,1) to[out=275,in=85] (4.8,-1);
+%\draw [<-, draw=blue] (4.6,1) to[out=275,in=85] (4.6,-1);
+%\draw (5.5,0) node {\textcolor[rgb]{0,0,1}{$\cdot \sigma$}};
+%\filldraw [fill=red, draw=red] (4.41,1) circle (1pt);
+%\filldraw [fill=red, draw=red] (4.41,-1) circle (1pt);
+%\draw (5.75,2.5) to[out=280,in=90](6,0) to[out=270,in=80] (5.75,-2.5);
+%\draw (7.25,2.5) to[out=280,in=90](7.5,0) to[out=270,in=80] (7.25,-2.5);
+%\draw (2.75,2.475) to[out=280,in=90](3,0) to[out=270,in=80] (2.75,-2.475);
+%
+%%\draw (4.75,2) node {$\mathcal{P}_x$};
+%%\draw (4.95,1.5) node {$\cong G$};
+%\draw (-0.5,-3.5) node {$L^\prime$};
+%\draw (19.5,-3.5) node {$L$};
+%%\draw (5,2) node {$\mathcal{P}_U$};
+%\draw (3.5,-3.4) node {$($};
+%\filldraw [fill=red, draw=red] (4.25,-3.5) circle (1pt);
+%\draw (4.25,-4.5) node {\textcolor[rgb]{1,0,0}{$x \coloneqq \pi_{\mathcal{P}}(p)$}};
+%\draw (5,-3.6) node {$)$};
+%%\draw (4.25, -3) node {$U$};
+%\draw (0,0) node {$\mathcal{P}$};
+%\draw [->] (0,-0.4) -- (0,-3.1);
+%\draw (0.7,-1.75) node {$\pi_{\mathcal{P}}$};
+%\draw (3.5,1) node {\textcolor[rgb]{1,0,0}{$p \cdot \sigma_y$}};
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\draw (10.5,-3.5) to[out=10,in=170] (14.75,-3.5) to[out=350,in=190] (19,-3.5); %hori M
+%\filldraw [fill=gray!20!white, draw=white] (14,2.5) to[out=280,in=90](14.25,0) to[out=270,in=80] (14,-2.5) -- (15.5,-2.5)  to[out=80,in=270](15.75,0) to[out=90,in=280] (15.5,2.5) -- cycle; %gray area
+%\draw (11.75,2.5) to[out=280,in=90](12,0) to[out=270,in=80] (11.75,-2.5); %vert line 1
+%\draw (14.75,2.5) to[out=280,in=90](15,0) to[out=270,in=80] (14.75,-2.5); %3
+%\draw (16.25,2.5) to[out=280,in=90](16.5,0) to[out=270,in=80] (16.25,-2.5); %4
+%\draw (17.75,2.5) to[out=280,in=90](18,0) to[out=270,in=80] (17.75,-2.5); %5
+%
+%\draw (13.25,2.475) to[out=280,in=90](13.5,0) to[out=270,in=80] (13.25,-2.475); %2
+%\draw [draw=blue] (14.25,0) to[out=10,in=170] (15,0) to[out=350,in=190] (15.75,0);
+%%\filldraw [fill=blue, draw=blue] (15,0) circle (1pt);
+%\draw (13.9,0) node {\textcolor[rgb]{0,0,1}{$\sigma$}};
+%
+%\draw (19,0) node {$\mathcal{G}$}; %These three lines are for LGB projection
+%\draw [->] (19,-0.4) -- (19,-3.1);
+%%\draw (18.5,-1.75) node {$\pi_{\mathcal{G}}$};
+%
+%%\draw (15.5,2) node {$\mathcal{G}_U$};
+%\draw (14,-3.4) node {$($};
+%\filldraw [fill=red, draw=red] (14.75,-3.5) circle (1pt);
+%\draw (14.75,-4.5) node {\textcolor[rgb]{1,0,0}{$y \coloneqq \phi(p)$}};
+%\draw (15.5,-3.6) node {$)$};
+%%\draw (14.75, -3) node {$U$};
+%
+%\path[<-] (8.5,0) edge [bend left] (11,0);
+%\end{tikzpicture}
+%\end{figure}
+%
+%\bas
+%\text{Use } \sigma \in \Gamma(\mathcal{G}): r_\sigma(p) \coloneqq p \cdot \sigma_{y}
+%\eas
+%
+%\pause
+%
+%\begin{remark}[Problem!]
+%Ambiguity in the choice of $\sigma$
+%$\Rightarrow$ Fix a horizontal distribution
+%\end{remark}
+%\end{frame}
+%}
+
+\subsection{Connection and curvature}
+
+{
+\setbeamertemplate{footline}{}
+
+\begin{frame}
+\begin{definition}[Principal bundle connection, {[S.-R.\ F.]}]
+\begin{itemize}
+	\item On $\mathcal{G}$: Multiplicative Yang-Mills connection
+	\item On $\mathcal{P}$: Ehresmann connection
+\end{itemize}
+\end{definition}
+
+\pause
+
+\begin{remark}[{[S.-R.\ F.]}]
+This gives rise to a generalised gauge theory by contracting the involved curvatures.
+\end{remark}
+\end{frame}
+
+\subsection{Associated bundles and connections}
+
+\begin{frame}
+\begin{definition}[Associated bundles, {[C.\ L.-G., S.-R.\ F.]}]
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&]
+	\mathcal{P} \arrow[swap]{d}{\pi_{\mathcal{P}}} \arrow{dr}{\phi} 
+	\& \arrow[bend right]{l} \mathcal{G} \arrow{d}{\pi_{\mathcal{G}}} \arrow[bend left]{dr}
+    \\
+	L' \arrow{r}{\Psi} \& L \& \arrow{l}{\pi_{\mathcal{T}}} \mathcal{T}
+	\end{tikzcd}
+\end{center}
+Equivalence relation on $\mathcal{P} \leftindex^{}_{\phi} \times_{\pi_{\mathcal{T}}} \mathcal{T}$
+\bas
+(p, t) &\sim \mleft( p \cdot g, g^{-1} \cdot t \mright)
+\eas
+defines the \textbf{associated bundle $\mathcal{P} \tilde{\times} \mathcal{T}$} over $L'$.
+\end{definition}
+\end{frame}
+
+\begin{frame}
+\begin{theorem}[Associated connection, {[C.\ L.-G., S.-R.\ F.]}]
+Given a multiplicative Ehresmann connection on $\mathcal{G}$, and related Ehresmann connection on $\mathcal{P}$ and $\mathcal{T}$, then
+\bas
+\mathup{PT}^{\mathcal{P} \tilde{\times} \mathcal{T}}_\gamma [p, t]
+&\coloneqq
+\mleft[ \mathup{PT}^{\mathcal{P}}_\gamma(p), \mathup{PT}^{\mathcal{T}}_{\Psi \circ \gamma} (t) \mright]
+\eas
+is a well-defined connection. 
+\end{theorem}
+
+%\begin{remark}
+%In the case of Yang-Mills: It is reasonable to assume that the connection on $\mathcal{G}$ is then also Yang-Mills.
+%\end{remark}
+\end{frame}
+}
+
+
+
+\section{Foliations as associated bundles}
+
+{
+\setbeamertemplate{footline}{}
+
+\begin{frame}
+\begin{BackToTheRoots}
+Fix a point $l \in L$ with transverse model $\mleft(\mathbb{R}^d, \tau_l\mright)$:
+\begin{enumerate}
+	\item $G$ a subgroup of $\mathrm{Inn}(\tau_l)$
+	\pause
+	\item $P$ a principal $G$-bundle, equipped with an ordinary connection
+	\pause
+	\item $\mathcal{P} \coloneqq (P \times P) \Big/ G$, the \textbf{Atiyah groupoid}
+	\pause
+	\item $\mathcal{G} \coloneqq (P \times G) \Big/ G$, the \textbf{inner group bundle}
+	\pause
+	\item $\mathcal{T} \coloneqq \mleft(P \times \mathbb{R}^d\mright) \Big/ G$, the \textbf{normal bundle}
+\end{enumerate}
+\end{BackToTheRoots}
+
+\pause
+
+\begin{remark}
+Think of the induced connection on $\mathcal{T}$ as the $\mathcal{F}$-connection.
+\end{remark}
+
+\end{frame}
+
+\begin{frame}
+$\mathcal{P}$ comes with two natural projections to $L$, denoted by $t$ and $s$
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&]
+	\mathcal{P} \arrow{dr}{s} \arrow[swap]{d}{(t, s)} 
+	\& \arrow[bend right]{l} \mathcal{G} \arrow{d} \arrow[bend left]{dr}
+    \\
+	L \times L \arrow[swap]{r}{\mathrm{pr}_2} \& L \& \arrow{l}{\pi_{\mathcal{T}}} \mathcal{T}
+	\end{tikzcd}
+\end{center}
+\pause
+This extends to the associated bundle
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&]
+	\mathcal{P} \tilde{\times} \mathcal{T} \arrow[swap]{d}{(t, s)} \arrow{dr}{s} \arrow{r}
+	\& \arrow{d}{\pi_{\mathcal{T}}} \mathcal{T}
+  \\
+	L \times L \arrow[swap]{r}{\mathrm{pr}_2} \& L 
+	\end{tikzcd}
+\end{center}
+
+\pause
+
+\begin{remark}[{[C.\ L.-G., S.-R.\ F.]}]
+Associated connection independent of the choice of $\mathcal{F}$-connection!
+\end{remark}
+\end{frame}
+
+\begin{frame}
+%\begin{definition}[Bisections]
+%\begin{center}
+	%\begin{tikzcd}[ampersand replacement=\&]
+    %\mathcal{P} \leftindex^{}_{s}\times_{\pi_{\mathcal{T}}} \mathcal{T} \arrow{r}
+    %\arrow[shift left=1ex]{d}{s} \arrow[shift right=1ex, swap]{d}{t}
+    %\& \mathcal{P} \tilde{\times} \mathcal{T}
+    %\arrow[shift left=1ex]{d}{s} \arrow[shift right=1ex, swap]{d}{t}
+    %\\
+    %L \arrow[equal]{r} \& L
+   %\end{tikzcd}
+%\end{center}
+%We call a \textbf{bisection} a section $\sigma$ of $t$ so that $s \circ \sigma$ is a diffeomorphism of $L$. This carries a structure as a group.
+%\end{definition}
+Explicitly, one possible way:
+
+\begin{remark}
+Corresponding to $\mathcal{P}$ there is an Atiyah sequence:
+\begin{center}
+\begin{tikzcd}[ampersand replacement=\&]
+	\mathup{Ad}(P)
+	\arrow[hook]{r}
+	\&
+	\mathup{At}(P)
+	\arrow[two heads]{r}
+	\&
+	\mathup{T}L
+	\end{tikzcd}
+\end{center}
+Via pullback to $\mathcal{T}$ we have a transitive algebroid over $\mathcal{T}$:
+\begin{center}
+\begin{tikzcd}[ampersand replacement=\&]
+	\pi_{\mathcal{T}}^!\mathup{Ad}(P)
+	\arrow[hook]{r}
+	\&
+	\pi_{\mathcal{T}}^!\mathup{At}(P)
+	\arrow[two heads]{r}
+	\&
+	\mathup{T}\mathcal{T}
+	\end{tikzcd}
+\end{center}
+\end{remark}
+
+\pause
+
+\begin{remark}
+Observe
+\bas
+\pi_{\mathcal{T}}^!\mathup{At}(P) \subset 
+\mathrm{T} \mleft( \mathcal{P} \leftindex^{}_{s}\times_{\pi_{\mathcal{T}}} \mathcal{T} \mright)
+\eas
+\end{remark}
+\end{frame}
+
+\begin{frame}
+$\mathup{Ad}(P)$ and $\mathup{At}(P)$ the adjoint and Atiyah bundle of $P$, respectively:
+%$\mathbb{H}$ the horizontal distribution on $\mathcal{P} \tilde{\times} \mathcal{T}$:
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&]
+	\Gamma_{\mathup{parallel}}^{\mathup{symmetric}}\mleft( \pi_{\mathcal{T}}^!\mathup{Ad}(P) \mright)
+	\arrow[hook]{r} \arrow{d}
+	\&
+	\Gamma_{\mathup{parallel}}^{\mathup{symmetric}}\mleft( \pi_{\mathcal{T}}^!\mathup{At}(P) \mright)
+	\arrow[two heads]{r} \arrow{d}
+	\&
+	\mathfrak{X}(L) \arrow[equal]{d}
+	\\
+	\tau
+	\arrow[hook]{r}
+	\&
+	\mathcal{F}_{\mathup{projectable}}
+	\arrow[two heads]{r}
+	\&
+	\mathfrak{X}(L)
+	\end{tikzcd}
+\end{center}
+
+\begin{remark}
+Why Yang-Mills connections?
+\bas
+\text{Involutive} &\leftrightarrow \text{Connection on } \mathcal{T} \text{ and } \mathcal{G} \text{ Yang-Mills}
+\eas
+\end{remark}
+\end{frame}
+
+}
+
+\section{Conclusion}
+{
+\setbeamertemplate{footline}{}
+\begin{frame}
+%\begin{table}[h!]
+		%\begin{tabularx}{\textwidth}{X| c c} 
+			%\rowcolor{gray}
+			%Gauge theory & Structure \\ \hline
+			%Yang-Mills & Lie group $G$ \\
+			%\rowcolor{Gray}
+			%Curved Yang-Mills & Lie group bundle $\mathcal{G}$ \\ 
+			%Curved Yang-Mills-Higgs & Lie groupoid $\mathfrak{G}$?
+		%\end{tabularx}
+%\end{table}
+
+%\begin{remark}
+%$\mathup{D}t$ is related to the Atiyah algebroid of $P$, $\mathup{T}P \Big/ G$.
+%\end{remark}
+
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&]
+		\& \arrow{dl} \mathcal{F} \arrow{dr} \&
+		\\
+		\mathup{At}(P) \& \& \text{Associated connection}
+	\end{tikzcd}
+\end{center}
+
+\begin{remark}[Why \textbf{curved} gauge theory?]
+\begin{itemize}
+	\item Associated connection invariant under choice of $\mathcal{F}$-connection $\nabla^{\mathcal{F}}$
+	\item Associated connection has the form
+	\bas
+	\nabla^{\mathcal{F}} + A \cdot 
+	\eas
+	where $A$ is the connection 1-form on $\mathcal{P}$
+\end{itemize}
+\end{remark}
+
+\end{frame}
+}
+\thispagestyle{empty}
+\topmargin -3.46 cm
+\vspace*{\fill}
+\begin{center}
+\huge \textbf{Thank you!}
+\end{center}
+\vspace*{\fill}
+
+\end{document}
+
