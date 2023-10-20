@@ -125,10 +125,7 @@
 \newtheorem*{aim}{Aim}
 \newtheorem*{BackToTheRoots}{Sketch of construction}
 
-%\AtBeginEnvironment{BackToTheRoots}{%
-  %\setbeamercolor{block title}{use=example text,fg=black,bg=pink!75!black}
-  %\setbeamercolor{block body}{parent=normal text,use=block title example,bg=pink!10}
-\AtBeginEnvironment{idea}{%
+\AtBeginEnvironment{BackToTheRoots}{%
   \setbeamercolor{block title}{use=example text,fg=black,bg=pink!75!black}
   \setbeamercolor{block body}{parent=normal text,use=block title example,bg=pink!10}
 }
@@ -350,7 +347,7 @@ Following the flows in $\mathcal{F}$, this gives rise to a partition of connecte
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[width=1.00\textwidth]{Foliation connection.png}
-	%\caption{$\mathcal{F}$-connections}
+	\caption{$\mathcal{F}$-connections}
 	\label{fig:Foliation connection}
 \end{figure}
 
@@ -360,7 +357,7 @@ Following the flows in $\mathcal{F}$, this gives rise to a partition of connecte
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[width=0.50\textwidth]{Foliation connection.png}
-	%\caption{$\mathcal{F}$-connections}
+	\caption{$\mathcal{F}$-connections}
 	\label{fig:Foliation connection Zwei}
 \end{figure}
 
@@ -369,80 +366,21 @@ There is a connection on the normal bundle of a leaf $L$:
 \begin{itemize}
 	\item Horizontal vector fields are in $\mathcal{F}$.
 	\item Parallel transport $\mathup{PT}_\gamma$ has values in $\mathup{Sym}(\tau_l, \tau_{l^\prime})$.
-	\item For a contractible loop $\gamma_0$ at $l$: $\mathup{PT}_{\gamma_0}$ values in $\mathup{Inner}(\tau_l)$.
+	\item For a contractible loop $\gamma_0$ at $l$: $\mathup{PT}_{\gamma_0}$ values in $\mathup{Inn}(\tau_l)$.
 \end{itemize}
 \end{theorem}
 
 \end{frame}
 
-\begin{frame}{Example of a transverse foliation $\tau$:}
-%\begin{center}
-\begin{minipage}[]{0.45\textwidth}
-\begin{figure}
+\begin{frame}[$\tau$]
+\begin{center}
 \begin{tikzpicture}
 \coordinate (O) at (0,0);
 \foreach \k in {1,...,4}\pgfmathparse{12*\k} \draw[fill=blue!\pgfmathresult] (O) circle (3.6-0.8*\k) node at (0, 3) {$\mathbb{S}^n$};
 \fill (O) circle[radius=2pt];
 \end{tikzpicture}
-\end{figure}
-%\end{center}
-\end{minipage}
-\hfill
-\begin{minipage}[]{0.45\textwidth}
-\begin{remark}
-\begin{itemize}
-	\item $\mathup{Inner}(\tau_l)$ maps each circle to itself
-	\item $\mathup{Sym}(\tau_l)$ allows to exchange circles
-	\item Both preserve $\tau_l$ and fix the origin
-\end{itemize}
-\end{remark}
-\end{minipage}
+\end{center}
 \end{frame}
-
-{
-\setbeamertemplate{footline}{}
-
-\begin{frame}{Idea}
-\begin{figure}[htbp]
-	\centering
-		\includegraphics[width=0.5\textwidth]{Foliation connection.png}
-	%\caption{$\mathcal{F}$-connections}
-	\label{fig:Foliation connection Drei}
-\end{figure}
-
-\begin{idea}
-For all $Y \in \mathcal{F}$:
-\bas
-Y
-&=
-X^\uparrow + \overline{\nu},
-\eas
-where $X \in \mathfrak{X}(L)$, $\nu \in \Gamma(\mathrm{inner}(\tau))$ and $\overline{\nu}$ its fundamental vector field.
-\pause
-
-\end{idea}
-\end{frame}
-
-\begin{frame}
-\begin{figure}[htbp]
-	\centering
-		\includegraphics[width=0.5\textwidth]{Foliation connection.png}
-	%\caption{$\mathcal{F}$-connections}
-	\label{fig:Foliation connection Vier}
-\end{figure}
-\begin{idea}
-Fix $l$ and given $\tau_l$: Reconstruct $\mathcal{F}$.
-\bas
-\mleft[ X^\uparrow + \overline{\nu}, {X^\prime}^\uparrow + \overline{\mu} \mright]
-&=
-\underbrace{\mleft[ X^\uparrow, {X^\prime}^\uparrow \mright]}_{\rightarrow \text{ curvature}}
-	+ \underbrace{\mleft[ X^\uparrow, \overline{\mu} \mright]
-	- \mleft[ {X^\prime}^\uparrow, \overline{\nu} \mright]}_{\rightarrow \text{ connection}}
-	+ \overline{\mleft[ \nu, \mu \mright]}
-\eas
-\end{idea}
-\end{frame}
-}
 
 \section{Curved Yang-Mills gauge theory}
 \subsection{Principal bundles based on Lie group bundle actions}
