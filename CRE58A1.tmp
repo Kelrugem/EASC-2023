@@ -934,20 +934,13 @@ X^\uparrow + \overline{\nu},
 \eas
 where $X \in \mathfrak{X}(L)$ and $\nu \in \Gamma(\mathcal{g})$.
 \end{theorem}
-\pause
+
 \begin{proof}
-We have
-\bas
 \mleft[ X^\uparrow, \overline{\nu} \mright]
 &=
-\overline{ \nabla^{\mathcal{G}}_X \nu },
+\overline{ \nabla^{\mathcal{G}} \nu },
 \\
-\mleft[ X^\uparrow, {X^\prime}^\uparrow \mright]
-&=
-\mleft[ X, X^\prime \mright]^\uparrow
-	+ \overline{\zeta\mleft(X, X^\prime\mright)},
-\eas
-where $\zeta \in \Omega^2(L; \mathcal{g})$.	
+
 \end{proof}
 \end{frame}
 
@@ -973,12 +966,6 @@ Fix a point $l \in L$ with transverse model $\mleft(\mathbb{R}^d, \tau_l\mright)
 Think of the induced connection on $\mathcal{T}$ as the $\mathcal{F}$-connection.
 \end{remark}
 
-\end{frame}
-
-\begin{frame}
-\begin{proposition}[{[C.\ L.-G., S.-R.\ F.]}]
-The associated connection on $\mathcal{G}$ is a multiplicative Yang-Mills connection and the one on $\mathcal{T}$ is a corresponding Yang-Mills connection.
-\end{proposition}
 \end{frame}
 
 \begin{frame}

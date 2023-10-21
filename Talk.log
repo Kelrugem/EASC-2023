@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.16)  21 OCT 2023 02:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.16)  22 OCT 2023 01:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1515,103 +1515,103 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 \@quotelevel=\count484
 \@quotereset=\count485
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-145.
+146.
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 (Talk.aux)
 \openout1 = `Talk.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 145.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 146.
 LaTeX Font Info:    Trying to load font information for LS1+stix on input line 
-145.
+146.
 
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls1stix.fd
 File: ls1stix.fd 2015/04/17 v1.1.2-latex STIX LS1 font definitions
 )
-LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    ... okay on input line 146.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1673,57 +1673,57 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 145.
+Package hyperref Info: Link coloring OFF on input line 146.
  (Talk.out) (Talk.out)
 \@outlinefile=\write6
 \openout6 = `Talk.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 145.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 146.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 145.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 146.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 145.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 146.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 145.
+(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 146.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> OT1/lmr/m/n on input line 145.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 145.
+(Font)                  OT1/lmss/m/n --> OT1/lmr/m/n on input line 146.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> OT1/lmss/b/n on input line 145.
+(Font)                  OT1/lmr/bx/n --> OT1/lmss/b/n on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/lmss/b/n on input line 145.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 145.
+(Font)                  OT1/lmr/bx/n --> OT1/lmss/b/n on input line 146.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> OT1/lmss/m/n on input line 145.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/m/n on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> OT1/lmss/m/n on input line 145.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 145.
+(Font)                  OT1/lmss/bx/n --> OT1/lmss/m/n on input line 146.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> OT1/lmss/m/it on input line 145.
+(Font)                  OT1/lmr/m/it --> OT1/lmss/m/it on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> OT1/lmss/m/it on input line 145.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 145.
+(Font)                  OT1/lmr/bx/it --> OT1/lmss/m/it on input line 146.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 145.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 145.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 146.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/lmss/m/n --> OT1/lmss/b/n on input line 145.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/b/n on input line 146.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/lmss/m/it --> OT1/lmss/b/it on input line 145.
+(Font)                  OT1/lmss/m/it --> OT1/lmss/b/it on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/b/n --> OT1/lmr/b/n on input line 145.
+(Font)                  OT1/lmss/b/n --> OT1/lmr/b/n on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmss/b/n --> OT1/lmss/b/n on input line 145.
+(Font)                  OT1/lmss/b/n --> OT1/lmss/b/n on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/m/n --> OT1/lmss/b/n on input line 145.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/b/n on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmss/m/it --> OT1/lmss/b/it on input line 145.
+(Font)                  OT1/lmss/m/it --> OT1/lmss/b/it on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> OT1/lmtt/b/n on input line 145.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/b/n on input line 146.
 
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-b
 asic-dictionary-English.dict
@@ -1753,7 +1753,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 145.
+ on input line 146.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -1770,10 +1770,10 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Talk.bbl' found.
  (Talk.bbl)
-Package biblatex Info: Reference section=0 on input line 145.
-Package biblatex Info: Reference segment=0 on input line 145.
+Package biblatex Info: Reference section=0 on input line 146.
+Package biblatex Info: Reference segment=0 on input line 146.
  (Talk.nav)
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 145--145
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 146--146
 [][][][]  
  []
 
@@ -1787,7 +1787,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 File: UTF8.chr 2021/10/16 4.8.5
 )
 LaTeX Font Info:    Trying to load font information for C70+bkai on input line 
-151.
+152.
 
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\c70bkai.fd
 File: c70bkai.fd 2021/10/16 4.8.5
@@ -1801,86 +1801,81 @@ File: c70bkai.fdx 2021/10/16 4.8.5
 u/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}] (Talk.toc)
 [2
 
+] [3
+
 ]
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-24.
+35.
  (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-224.
+235.
 
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-224.
+235.
 
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 224.
+(Font)              <10.95> on input line 235.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 224.
+(Font)              <8> on input line 235.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 224.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 224
+(Font)              <6> on input line 235.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 235
 .
 
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 224
+LaTeX Font Info:    Trying to load font information for U+msb on input line 235
 .
 
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 2
-24.
+35.
 
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 224.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 235.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 224.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 235.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 224.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 235.
 
 
-Overfull \hbox (5.94662pt too wide) in paragraph at lines 224--224
+Overfull \hbox (5.94662pt too wide) in paragraph at lines 235--235
 [][]  
  []
 
-[3
+[4
 
-] [4
+] [5
 
 {C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}
 {C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}
 ]
 LaTeX Font Info:    Trying to load font information for LS1+stixscr on input li
-ne 261.
+ne 272.
 
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls1stixscr.fd
 File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+euf on input line 261
+LaTeX Font Info:    Trying to load font information for U+euf on input line 272
 .
 
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[][][][] 
- []
-
-[5
-
-]
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
@@ -1901,46 +1896,41 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 [8
 
-{C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}
 ]
-<Foliation example.png, id=444, 700.6175pt x 444.15938pt>
-File: Foliation example.png Graphic file (type png)
-<use Foliation example.png>
-Package pdftex.def Info: Foliation example.png  used on input line 311.
-(pdftex.def)             Requested size: 215.10196pt x 136.35962pt.
-
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
 
 [9
 
- <./Foliation example.png>]
-<Infinite comb.png, id=483, 590.70688pt x 564.60938pt>
-File: Infinite comb.png Graphic file (type png)
-<use Infinite comb.png>
-Package pdftex.def Info: Infinite comb.png  used on input line 342.
-(pdftex.def)             Requested size: 153.64493pt x 146.85527pt.
- [10
-
- <./Infinite comb.png>]
-<Foliation connection.png, id=521, 672.01062pt x 390.45876pt>
-File: Foliation connection.png Graphic file (type png)
-<use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 357.
-(pdftex.def)             Requested size: 307.28987pt x 178.54674pt.
+{C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}
+]
+<Foliation example.png, id=538, 700.6175pt x 444.15938pt>
+File: Foliation example.png Graphic file (type png)
+<use Foliation example.png>
+Package pdftex.def Info: Foliation example.png  used on input line 322.
+(pdftex.def)             Requested size: 215.10196pt x 136.35962pt.
 
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
 
-[11
+[10
 
- <./Foliation connection.png>]
+ <./Foliation example.png>]
+<Infinite comb.png, id=587, 590.70688pt x 564.60938pt>
+File: Infinite comb.png Graphic file (type png)
+<use Infinite comb.png>
+Package pdftex.def Info: Infinite comb.png  used on input line 353.
+(pdftex.def)             Requested size: 153.64493pt x 146.85527pt.
+ [11
+
+ <./Infinite comb.png>]
+<Foliation connection.png, id=635, 672.01062pt x 390.45876pt>
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 376.
-(pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
+Package pdftex.def Info: Foliation connection.png  used on input line 368.
+(pdftex.def)             Requested size: 307.28987pt x 178.54674pt.
 
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
@@ -1948,26 +1938,11 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 [12
 
-]
-Overfull \hbox (21.45601pt too wide) in paragraph at lines 400--400
- [] 
- []
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 400.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 400.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 400.
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 400.
-
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 400.
-
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 400.
-
+ <./Foliation connection.png>]
+File: Foliation connection.png Graphic file (type png)
+<use Foliation connection.png>
+Package pdftex.def Info: Foliation connection.png  used on input line 387.
+(pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
 
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
@@ -1976,45 +1951,61 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [13
 
 ]
-File: Foliation connection.png Graphic file (type png)
-<use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 424.
-(pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
-24.
- (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
+Overfull \hbox (21.45601pt too wide) in paragraph at lines 411--411
+ [] 
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 411.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 411.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 411.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 411.
+
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 411.
+
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 411.
+
+
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
 [14
 
 ]
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 424.
+Package pdftex.def Info: Foliation connection.png  used on input line 435.
 (pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
- [15
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
+35.
+ (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+[15
 
 ]
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 444.
+Package pdftex.def Info: Foliation connection.png  used on input line 435.
 (pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
  [16
 
-] [17
-
 ]
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[][][][] 
- []
+File: Foliation connection.png Graphic file (type png)
+<use Foliation connection.png>
+Package pdftex.def Info: Foliation connection.png  used on input line 455.
+(pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
+ [17
 
-[18
+] [18
 
-]
-Overfull \vbox (16.7027pt too high) detected at line 532
- []
-
-[19
+] [19
 
 ] [20
 
@@ -2025,23 +2016,55 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 [21
 
-] [22
+]
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[][][][] 
+ []
 
-] [23
+[22
 
-] [24
+]
+Overfull \hbox (7.04929pt too wide) in paragraph at lines 624--624
+ [] 
+ []
 
-] [25
+[23
 
-] [26
+]
+Overfull \hbox (7.04929pt too wide) in paragraph at lines 624--624
+ [] 
+ []
 
-] [27
+[24
+
+]
+Overfull \hbox (7.04929pt too wide) in paragraph at lines 694--694
+ [] 
+ []
+
+[25
+
+]
+Overfull \vbox (14.54933pt too high) detected at line 747
+ []
+
+[26
+
+]
+Overfull \vbox (14.54933pt too high) detected at line 747
+ []
+
+[27
 
 ] [28
 
 ] [29
 
-] [30
+]
+Overfull \vbox (16.7027pt too high) detected at line 799
+ []
+
+[30
 
 ] [31
 
@@ -2049,18 +2072,68 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 ] [33
 
-] [34
+]
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[][][][] 
+ []
 
-] [35
+[34
 
 ]
-[36
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[35
+
+] [36
 
 ] [37
 
 ] [38
 
-] [39
+]
+Overfull \vbox (6.72517pt too high) detected at line 952
+ []
+
+[39
+
+]
+Overfull \vbox (6.72517pt too high) detected at line 952
+ []
+
+[40
+
+] [41
+
+] [42
+
+] [43
+
+] [44
+
+] [45
+
+] [46
+
+] [47
+
+] [48
+
+] [49
+
+] [50
+
+] [51
+
+] [52
+
+] [53
+
+] [54
+
+]
+[55
 
 ]
 \tf@nav=\write7
@@ -2080,11 +2153,11 @@ Package logreq Info: Writing requests to 'Talk.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52237 strings out of 476360
- 1218152 string characters out of 5788025
- 3048626 words of memory out of 5000000
- 71627 multiletter control sequences out of 15000+600000
- 583340 words of font info for 106 fonts, out of 8000000 for 9000
+ 52545 strings out of 476360
+ 1225918 string characters out of 5788025
+ 3054691 words of memory out of 5000000
+ 71900 multiletter control sequences out of 15000+600000
+ 594885 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,29n,122p,1131b,8483s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bkaiu/bkaiu4
@@ -2114,12 +2187,13 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso8.pfb><C:/Users/kelru/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/kelru/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/kelru/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/kelru/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/
-Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/stix-mathscr.
-pfb>
-Output written on Talk.pdf (39 pages, 1053153 bytes).
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/
+Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
+sbm10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix
+/stix-mathscr.pfb>
+Output written on Talk.pdf (55 pages, 1338424 bytes).
 PDF statistics:
- 2052 PDF objects out of 2073 (max. 8388607)
- 95 named destinations out of 1000 (max. 500000)
- 1570 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3266 PDF objects out of 3580 (max. 8388607)
+ 128 named destinations out of 1000 (max. 500000)
+ 2224 words of extra memory for PDF output out of 10000 (max. 10000000)
 
