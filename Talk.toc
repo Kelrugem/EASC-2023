@@ -6,6 +6,6 @@
 \beamer@subsectionintoc {2}{1}{Principal bundles based on Lie group bundle actions}{18}{0}{2}
 \beamer@subsectionintoc {2}{2}{Connections as parallel transport}{23}{0}{2}
 \beamer@subsectionintoc {2}{3}{General notion of Ehresmann and Yang-Mills connections}{30}{0}{2}
-\beamer@subsectionintoc {2}{4}{Associated bundles and connections}{36}{0}{2}
-\beamer@sectionintoc {3}{Foliations and Yang-Mills connections}{38}{0}{3}
-\beamer@sectionintoc {4}{Conclusion}{54}{0}{4}
+\beamer@subsectionintoc {2}{4}{Associated bundles and connections}{37}{0}{2}
+\beamer@sectionintoc {3}{Foliations and Yang-Mills connections}{39}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{55}{0}{4}

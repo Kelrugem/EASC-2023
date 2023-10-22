@@ -808,9 +808,9 @@ On $\mathcal{G}$ there is also the notion of \textbf{multiplicative Yang-Mills c
 \cdot
 \mathup{PT}_{\gamma}^{\mathcal{G}}(g),
 \\
-\mathup{PT}_{\gamma_0}^{\mathcal{T}}(t)
+\mathup{PT}_{\gamma_0}^{\mathcal{G}}(q)
 &=
-g_{\gamma_0} \cdot t \cdot g_{\gamma_0}^{-1}
+g_{\gamma_0} \cdot q \cdot g_{\gamma_0}^{-1}
 \eas
 \end{definition}
 
@@ -839,7 +839,7 @@ This gives rise to a generalised gauge theory by contracting the involved curvat
 \renewcommand\insertreferences{{\tiny For differential: Marius Crainic, Maria Amelia Salazar, and Ivan Struchiner. Multiplicative forms and Spencer operators. \newline \textit{Mathematische Zeitschrift}, 279(3):939–979, 2015.}}
 
 \begin{frame}
-\begin{remark}[S.-R.\ F.]
+\begin{remark}
 There is a simplicial differential $\delta$ on $\mathcal{G} \stackrel{\pi_{\mathcal{G}}}{\to} L$ with Lie algebra bundle $\mathcal{g}$
 \bas
 \delta: \Omega^\bullet( \underbrace{\mathcal{G} * \dotsc * \mathcal{G}}_{k \text{ times}}; \pi_{\mathcal{G}}^*\mathcal{g} )
@@ -849,16 +849,16 @@ There is a simplicial differential $\delta$ on $\mathcal{G} \stackrel{\pi_{\math
 such that the definition of the multiplicative Yang-Mills connection is equivalent to the \textbf{compatibility conditions}
 \begin{itemize}
 	\item Connection closed
-	\item Curvature exact
+	\item Curvature exact ([S.-R.\ F.])
 \end{itemize}
 \end{remark}
 \end{frame}
 
-\renewcommand\insertreferences{{\tiny For the first statement: Camille Laurent-Gengoux, Mathieu Stiénon, and Ping Xu. Non-abelian differentiable gerbes. \newline \textit{Advances in Mathematics}, 220(5):1357–1427, 2009.}}
+\renewcommand\insertreferences{{\tiny For the first equation: Camille Laurent-Gengoux, Mathieu Stiénon, and Ping Xu. Non-abelian differentiable gerbes. \newline \textit{Advances in Mathematics}, 220(5):1357–1427, 2009.}}
 
 \begin{frame}
-\begin{remark}[{[S.-R.\ F.]}]
-On the Lie algebra bundle $\mathcal{g}$ we get a vector bundle connection $\nabla^{\mathcal{G}}$ with 
+\begin{remark}
+On the Lie algebra bundle $\mathcal{g}$ we have a connection $\nabla^{\mathcal{G}}$ with 
 \bas
 \nabla^{\mathcal{G}}\mleft( \mleft[ \mu, \nu \mright]_{\mathcal{g}} \mright)
 &=
@@ -867,9 +867,31 @@ On the Lie algebra bundle $\mathcal{g}$ we get a vector bundle connection $\nabl
 \\
 R_{\nabla^{\mathcal{G}}}
 &=
-\mathrm{ad} \circ \zeta.
+\mathrm{ad} \circ \zeta. \qquad \text{ ([S.-R.\ F.])}
 \eas
 \end{remark}
+\pause
+\begin{example}
+Given a short exact sequence of algebroids 
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&]
+	\mathcal{g} \arrow[hook]{r}
+	\& E \arrow[two heads]{r}
+	\& \mathrm{T}L
+	\end{tikzcd}
+\end{center}
+with splitting $\chi \colon \mathrm{T}L \to E$, then
+\bas
+\nabla^{\mathcal{G}}_X \nu
+&=
+\mleft[ \chi(X), \nu \mright]_E,
+\\
+\zeta\mleft( X, X' \mright)
+&=
+\mleft[ \chi(X), \chi(X') \mright]_E
+	- \chi\mleft( [X, X'] \mright).
+\eas
+\end{example}
 \end{frame}
 
 {
@@ -905,7 +927,6 @@ Given a multiplicative Ehresmann connection on $\mathcal{G}$, and related Ehresm
 \eas
 is a well-defined connection. 
 \end{theorem}
-
 %\begin{remark}
 %In the case of Yang-Mills: It is reasonable to assume that the connection on $\mathcal{G}$ is then also Yang-Mills.
 %\end{remark}
@@ -1086,12 +1107,12 @@ $\mathup{Ad}(P)$ and $\mathup{At}(P)$ the adjoint and Atiyah bundle of $P$, resp
 	\end{tikzcd}
 \end{center}
 
-\begin{remark}
-Why Yang-Mills connections?
-\bas
-\text{Involutive} &\leftrightarrow \text{Connection on } \mathcal{T} \text{ and } \mathcal{G} \text{ Yang-Mills}
-\eas
-\end{remark}
+%\begin{remark}
+%Why Yang-Mills connections?
+%\bas
+%\text{Involutive} &\leftrightarrow \text{Connection on } \mathcal{T} \text{ and } \mathcal{G} \text{ Yang-Mills}
+%\eas
+%\end{remark}
 \end{frame}
 
 }
