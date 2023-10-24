@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.16)  22 OCT 2023 17:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.16)  24 OCT 2023 22:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2161,8 +2161,8 @@ Package logreq Info: Writing requests to 'Talk.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  52644 strings out of 476360
- 1228765 string characters out of 5788025
- 3054692 words of memory out of 5000000
+ 1228771 string characters out of 5788025
+ 3055670 words of memory out of 5000000
  71997 multiletter control sequences out of 15000+600000
  594885 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2198,7 +2198,7 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/
 Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
 sbm10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix
 /stix-mathscr.pfb>
-Output written on Talk.pdf (56 pages, 1357098 bytes).
+Output written on Talk.pdf (56 pages, 1356652 bytes).
 PDF statistics:
  3337 PDF objects out of 3580 (max. 8388607)
  130 named destinations out of 1000 (max. 500000)
