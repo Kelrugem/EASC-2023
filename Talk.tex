@@ -73,7 +73,14 @@
 \title{Classification of neighbourhoods of leaves of singular foliations}   
 \subtitle{joint work with Camille Laurent-Gengoux}   
 \author{Simon-Raphael Fischer} 
-\institute{\begin{CJK*}{UTF8}{bkai}國家理論科學研究中心\end{CJK*}}
+\institute{
+\begin{figure}
+	\centering
+		\includegraphics[width=.50\textwidth]{NCTS.png}
+	\label{fig:NCTS}
+\end{figure}
+\begin{CJK*}{UTF8}{bkai}國家理論科學研究中心\end{CJK*}
+}
 \date{2 November 2023} 
 %\date{Le lundi 31 mai 2021} 
 
@@ -894,49 +901,12 @@ with splitting $\chi \colon \mathrm{T}L \to E$, then
 \end{example}
 \end{frame}
 
-{
-\setbeamertemplate{footline}{}
 
-\subsection{Associated bundles and connections}
-
-\begin{frame}
-\begin{definition}[Associated bundles, {[C.\ L.-G., S.-R.\ F.]}]
-\begin{center}
-	\begin{tikzcd}[ampersand replacement=\&]
-	\mathcal{P} \arrow[swap]{d}{\pi_{\mathcal{P}}} \arrow{dr}{\phi} 
-	\& \arrow[bend right]{l} \mathcal{G} \arrow{d}{\pi_{\mathcal{G}}} \arrow[bend left]{dr}
-    \\
-	L' \arrow{r}{\Psi} \& L \& \arrow{l}{\pi_{\mathcal{T}}} \mathcal{T}
-	\end{tikzcd}
-\end{center}
-Equivalence relation on $\mathcal{P} \leftindex^{}_{\phi} \times_{\pi_{\mathcal{T}}} \mathcal{T}$
-\bas
-(p, t) &\sim \mleft( p \cdot g, g^{-1} \cdot t \mright)
-\eas
-defines the \textbf{associated bundle $\mathcal{P} \tilde{\times} \mathcal{T}$} over $L'$.
-\end{definition}
-\end{frame}
-
-\begin{frame}
-\begin{theorem}[Associated connection, {[C.\ L.-G., S.-R.\ F.]}]
-Given a multiplicative Ehresmann connection on $\mathcal{G}$, and related Ehresmann connection on $\mathcal{P}$ and $\mathcal{T}$, then
-\bas
-\mathup{PT}^{\mathcal{P} \tilde{\times} \mathcal{T}}_\gamma [p, t]
-&\coloneqq
-\mleft[ \mathup{PT}^{\mathcal{P}}_\gamma(p), \mathup{PT}^{\mathcal{T}}_{\Psi \circ \gamma} (t) \mright]
-\eas
-is a well-defined connection. 
-\end{theorem}
-%\begin{remark}
-%In the case of Yang-Mills: It is reasonable to assume that the connection on $\mathcal{G}$ is then also Yang-Mills.
-%\end{remark}
-\end{frame}
-}
 
 
 
 \section{Foliations and Yang-Mills connections}
-
+\subsection{Reconstructing Foliations}
 {
 \setbeamertemplate{footline}{}
 
@@ -979,8 +949,8 @@ Fix a point $l \in L$ with transverse model $\mleft(\mathbb{R}^d, \tau_l\mright)
 	\item $G$ a subgroup of $\mathrm{Inn}(\tau_l)$
 	\pause
 	\item $P$ a principal $G$-bundle, equipped with an ordinary connection
-	\pause
-	\item $\mathcal{P} \coloneqq (P \times P) \Big/ G$, the \textbf{Atiyah groupoid}
+	%\pause
+	%\item 
 	\pause
 	\item $\mathcal{G} \coloneqq (P \times G) \Big/ G$, the \textbf{inner group bundle}
 	\pause
@@ -999,38 +969,95 @@ Think of the induced connection on $\mathcal{T}$ as the $\mathcal{F}$-connection
 \begin{frame}
 \begin{proposition}[{[C.\ L.-G., S.-R.\ F.]}]
 The associated connection on $\mathcal{G}$ is a multiplicative Yang-Mills connection and the one on $\mathcal{T}$ is a corresponding Yang-Mills connection.
-
-Thus, we have a singular foliation on $\mathcal{F}$, which, by construction, admits $L$ as a leaf and $\tau_l$ as transverse data.
 \end{proposition}
+
+\begin{remark}
+Thus, we have a singular foliation on $\mathcal{T}$, which, by construction, admits $L$ as a leaf and $\tau_l$ as transverse data.
+\end{remark}
 \end{frame}
 
+{
+\setbeamertemplate{footline}{}
+
+\subsection{Independency of choice of connection}
+
 \begin{frame}
-$\mathcal{P}$ comes with two natural projections to $L$, denoted by $t$ and $s$
+\begin{lemma}[{[C.\ L.-G., S.-R.\ F.]}]
+$\mathcal{P} \coloneqq (P \times P) \Big/ G$, the \textbf{Atiyah groupoid}, is a principal $\mathcal{G}$-bundle
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&]
 	\mathcal{P} \arrow{dr}{s} \arrow[swap]{d}{(t, s)} 
-	\& \arrow[bend right]{l} \mathcal{G} \arrow{d} \arrow[bend left]{dr}
+	\& \arrow[bend right]{l} \mathcal{G} \arrow{d}
     \\
-	L \times L \arrow[swap]{r}{\mathrm{pr}_2} \& L \& \arrow{l}{\pi_{\mathcal{T}}} \mathcal{T}
+	L \times L \arrow[swap]{r}{\mathrm{pr}_2} \& L
 	\end{tikzcd}
 \end{center}
-\pause
-This extends to the associated bundle
+where $t$ and $s$ are the target and source arrows, respectively.
+\end{lemma}
+\end{frame}
+
+\begin{frame}
+\begin{definition}[Associated bundles, {[C.\ L.-G., S.-R.\ F.]}]
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&]
-	\mathcal{P} \tilde{\times} \mathcal{T} \arrow[swap]{d}{(t, s)} \arrow{dr}{s} \arrow{r}
-	\& \arrow{d}{\pi_{\mathcal{T}}} \mathcal{T}
-  \\
-	L \times L \arrow[swap]{r}{\mathrm{pr}_2} \& L 
+	\mathcal{P} \arrow[swap]{d}{(t, s)} \arrow{dr}{s} 
+	\& \arrow[bend right]{l} \mathcal{G} \arrow{d}{\pi_{\mathcal{G}}} \arrow[bend left]{dr}
+    \\
+	L' \arrow{r}{\mathup{pr}_2} \& L \& \arrow{l}{\pi_{\mathcal{T}}} \mathcal{T}
 	\end{tikzcd}
 \end{center}
+Equivalence relation on $\mathcal{P} \leftindex^{}_{\phi} \times_{\pi_{\mathcal{T}}} \mathcal{T}$
+\bas
+(p, t) &\sim \mleft( p \cdot g, g^{-1} \cdot t \mright)
+\eas
+defines the \textbf{associated bundle $\mathcal{P} \tilde{\times} \mathcal{T}$} over $L'$.
+\end{definition}
+\end{frame}
 
+\begin{frame}
+\begin{theorem}[Associated connection, {[C.\ L.-G., S.-R.\ F.]}]
+\bas
+\mathup{PT}^{\mathcal{P} \tilde{\times} \mathcal{T}}_\gamma [p, t]
+&\coloneqq
+\mleft[ \mathup{PT}^{\mathcal{P}}_\gamma(p), \mathup{PT}^{\mathcal{T}}_{\Psi \circ \gamma} (t) \mright]
+\eas
+is a well-defined connection. 
+\end{theorem}
+%\begin{remark}
+%In the case of Yang-Mills: It is reasonable to assume that the connection on $\mathcal{G}$ is then also Yang-Mills.
+%\end{remark}
 \pause
-
 \begin{remark}[{[C.\ L.-G., S.-R.\ F.]}]
-Associated connection independent of the choice of $\mathcal{F}$-connection!
+Associated connection independent of the choice of connection on $P$!
 \end{remark}
 \end{frame}
+}
+
+%\begin{frame}
+%$\mathcal{P}$ comes with two natural projections to $L$, denoted by $t$ and $s$
+%\begin{center}
+	%\begin{tikzcd}[ampersand replacement=\&]
+	%\mathcal{P} \arrow{dr}{s} \arrow[swap]{d}{(t, s)} 
+	%\& \arrow[bend right]{l} \mathcal{G} \arrow{d} \arrow[bend left]{dr}
+    %\\
+	%L \times L \arrow[swap]{r}{\mathrm{pr}_2} \& L \& \arrow{l}{\pi_{\mathcal{T}}} \mathcal{T}
+	%\end{tikzcd}
+%\end{center}
+%\pause
+%This extends to the associated bundle
+%\begin{center}
+	%\begin{tikzcd}[ampersand replacement=\&]
+	%\mathcal{P} \tilde{\times} \mathcal{T} \arrow[swap]{d}{(t, s)} \arrow{dr}{s} \arrow{r}
+	%\& \arrow{d}{\pi_{\mathcal{T}}} \mathcal{T}
+  %\\
+	%L \times L \arrow[swap]{r}{\mathrm{pr}_2} \& L 
+	%\end{tikzcd}
+%\end{center}
+%
+%\pause
+%
+%
+%\end{frame}
 
 \begin{frame}
 %\begin{definition}[Bisections]
