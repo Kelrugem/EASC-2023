@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.16)  26 OCT 2023 22:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.16)  30 OCT 2023 23:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1777,7 +1777,7 @@ Overfull \hbox (2.12502pt too wide) in paragraph at lines 153--153
 [][][][]  
  []
 
-<NCTS.png, id=75, 562.60187pt x 174.6525pt>
+<NCTS.png, id=74, 562.60187pt x 174.6525pt>
 File: NCTS.png Graphic file (type png)
 <use NCTS.png>
 Package pdftex.def Info: NCTS.png  used on input line 159.
@@ -1914,7 +1914,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 {C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}
 ]
-<Foliation example.png, id=551, 700.6175pt x 444.15938pt>
+<Foliation example.png, id=542, 700.6175pt x 444.15938pt>
 File: Foliation example.png Graphic file (type png)
 <use Foliation example.png>
 Package pdftex.def Info: Foliation example.png  used on input line 329.
@@ -1927,7 +1927,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [10
 
  <./Foliation example.png>]
-<Infinite comb.png, id=600, 590.70688pt x 564.60938pt>
+<Infinite comb.png, id=590, 590.70688pt x 564.60938pt>
 File: Infinite comb.png Graphic file (type png)
 <use Infinite comb.png>
 Package pdftex.def Info: Infinite comb.png  used on input line 360.
@@ -1935,7 +1935,7 @@ Package pdftex.def Info: Infinite comb.png  used on input line 360.
  [11
 
  <./Infinite comb.png>]
-<Foliation connection.png, id=649, 672.01062pt x 390.45876pt>
+<Foliation connection.png, id=638, 672.01062pt x 390.45876pt>
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
 Package pdftex.def Info: Foliation connection.png  used on input line 375.
@@ -1989,10 +1989,10 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 ]
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 442.
+Package pdftex.def Info: Foliation connection.png  used on input line 440.
 (pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
-42.
+40.
  (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -2001,14 +2001,14 @@ File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ]
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 442.
+Package pdftex.def Info: Foliation connection.png  used on input line 440.
 (pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
  [16
 
 ]
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 462.
+Package pdftex.def Info: Foliation connection.png  used on input line 463.
 (pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
  [17
 
@@ -2033,34 +2033,34 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [22
 
 ]
-Overfull \hbox (7.04929pt too wide) in paragraph at lines 631--631
+Overfull \hbox (7.04929pt too wide) in paragraph at lines 632--632
  [] 
  []
 
 [23
 
 ]
-Overfull \hbox (7.04929pt too wide) in paragraph at lines 631--631
+Overfull \hbox (7.04929pt too wide) in paragraph at lines 632--632
  [] 
  []
 
 [24
 
 ]
-Overfull \hbox (7.04929pt too wide) in paragraph at lines 701--701
+Overfull \hbox (7.04929pt too wide) in paragraph at lines 702--702
  [] 
  []
 
 [25
 
 ]
-Overfull \vbox (14.54933pt too high) detected at line 754
+Overfull \vbox (14.54933pt too high) detected at line 755
  []
 
 [26
 
 ]
-Overfull \vbox (14.54933pt too high) detected at line 754
+Overfull \vbox (14.54933pt too high) detected at line 755
  []
 
 [27
@@ -2070,7 +2070,7 @@ Overfull \vbox (14.54933pt too high) detected at line 754
 ] [29
 
 ]
-Overfull \vbox (16.7027pt too high) detected at line 806
+Overfull \vbox (16.7027pt too high) detected at line 807
  []
 
 [30
@@ -2105,13 +2105,13 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 ] [37
 
 ]
-Overfull \vbox (6.72517pt too high) detected at line 943
+Overfull \vbox (6.72517pt too high) detected at line 944
  []
 
 [38
 
 ]
-Overfull \vbox (6.72517pt too high) detected at line 943
+Overfull \vbox (6.72517pt too high) detected at line 944
  []
 
 [39
@@ -2130,7 +2130,7 @@ Overfull \vbox (6.72517pt too high) detected at line 943
 
 ]
 LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 997
+(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 998
 .
  [46
 
@@ -2169,52 +2169,48 @@ Package logreq Info: Writing requests to 'Talk.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52414 strings out of 476360
- 1222960 string characters out of 5788025
- 3055478 words of memory out of 5000000
- 71766 multiletter control sequences out of 15000+600000
+ 52403 strings out of 476360
+ 1222576 string characters out of 5788025
+ 3055112 words of memory out of 5000000
+ 71756 multiletter control sequences out of 15000+600000
  597636 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,29n,122p,1131b,8483s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{Navigation55} has been referenced but does not exis
-t, replaced by a fixed one
-
-<C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bkaiu/bkaiu4e.
-pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bkaiu/bkai
-u57.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bkaiu/
-bkaiu5b.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bk
-aiu/bkaiu5f.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/arphi
-c/bkaiu/bkaiu74.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/a
-rphic/bkaiu/bkaiu78.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/arphic/bkaiu/bkaiu79.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts
-/type1/arphic/bkaiu/bkaiu7a.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/f
-onts/type1/arphic/bkaiu/bkaiu8a.pfb><C:/Users/kelru/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/kelru/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/kelru/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/kelru/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/kelru/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/kelru/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/kelru/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/kelru/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/kelru/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/kelru/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/kelru/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss8.pfb><C:/Users/kelru/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/kelru/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/kelru/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso10.pfb><C:/Users/kelru/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso8.pfb><C:/Users/kelru/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/kelru/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/kelru/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/kelru/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/
-Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
-sbm10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix
-/stix-mathscr.pfb>
-Output written on Talk.pdf (54 pages, 1517557 bytes).
+<C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bkaiu/bkaiu4
+e.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bkaiu/bk
+aiu57.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bkai
+u/bkaiu5b.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/
+bkaiu/bkaiu5f.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/arp
+hic/bkaiu/bkaiu74.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1
+/arphic/bkaiu/bkaiu78.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/arphic/bkaiu/bkaiu79.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fon
+ts/type1/arphic/bkaiu/bkaiu7a.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX
+/fonts/type1/arphic/bkaiu/bkaiu8a.pfb><C:/Users/kelru/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/kelru/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/kelr
+u/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/kelr
+u/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/kelr
+u/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/kelr
+u/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/kelru
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/kelru/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/kelru/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/kelru/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/kelru/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss8.pfb><C:/Users/kelru/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/kelru/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/kelru
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso10.pfb><C:/Users/kelr
+u/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso8.pfb><C:/Users/kelr
+u/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/kelr
+u/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/kelru
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/kelru/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C
+:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols
+/msbm10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/st
+ix/stix-mathscr.pfb>
+Output written on Talk.pdf (54 pages, 1506725 bytes).
 PDF statistics:
- 3325 PDF objects out of 3580 (max. 8388607)
- 129 named destinations out of 1000 (max. 500000)
- 2319 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3271 PDF objects out of 3580 (max. 8388607)
+ 128 named destinations out of 1000 (max. 500000)
+ 2313 words of extra memory for PDF output out of 10000 (max. 10000000)
 

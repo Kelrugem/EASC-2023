@@ -429,10 +429,8 @@ There is a connection on the normal bundle of a leaf $L$:
 \end{figure}
 
 \begin{idea}
-For all $Y \in \mathcal{F}$:
+Generators of $\mathcal{F}$ given by $\mathcal{F}_{\mathup{projectable}}$:
 \bas
-Y
-&=
 X^\uparrow + \overline{\nu},
 \eas
 where $X \in \mathfrak{X}(L)$, $X^\uparrow$ its projectable horizontal lift, $\nu \in \Gamma(\mathrm{inner}(\tau))$ and $\overline{\nu}$ its fundamental vector field.
@@ -457,6 +455,9 @@ Fix $l$ and given $\tau_l$: Reconstruct $\mathcal{F}$.
 	+ \underbrace{\mleft[ X^\uparrow, \overline{\mu} \mright]
 	- \mleft[ {X^\prime}^\uparrow, \overline{\nu} \mright]}_{\rightsquigarrow \text{ connection}}
 	+ \overline{\mleft[ \nu, \mu \mright]}
+\\
+&\stackrel{!}{=}
+\mleft[ X, X' \mright]^\uparrow + \overline{\vphantom{d}\dots}
 \eas
 \end{idea}
 \end{frame}
@@ -1006,7 +1007,7 @@ where $t$ and $s$ are the target and source arrows, respectively.
 	L' \arrow{r}{\mathup{pr}_2} \& L \& \arrow{l}{\pi_{\mathcal{T}}} \mathcal{T}
 	\end{tikzcd}
 \end{center}
-Equivalence relation on $\mathcal{P} \leftindex^{}_{\phi} \times_{\pi_{\mathcal{T}}} \mathcal{T}$
+Equivalence relation on $\mathcal{P} \leftindex^{}_{s} \times_{\pi_{\mathcal{T}}} \mathcal{T}$
 \bas
 (p, t) &\sim \mleft( p \cdot g, g^{-1} \cdot t \mright)
 \eas
@@ -1019,7 +1020,7 @@ defines the \textbf{associated bundle $\mathcal{P} \tilde{\times} \mathcal{T}$} 
 \bas
 \mathup{PT}^{\mathcal{P} \tilde{\times} \mathcal{T}}_\gamma [p, t]
 &\coloneqq
-\mleft[ \mathup{PT}^{\mathcal{P}}_\gamma(p), \mathup{PT}^{\mathcal{T}}_{\Psi \circ \gamma} (t) \mright]
+\mleft[ \mathup{PT}^{\mathcal{P}}_\gamma(p), \mathup{PT}^{\mathcal{T}}_{\mathrm{pr}_2 \circ \gamma} (t) \mright]
 \eas
 is a well-defined connection. 
 \end{theorem}
