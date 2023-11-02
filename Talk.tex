@@ -71,7 +71,7 @@
 
 
 \title{Classification of neighbourhoods of leaves of singular foliations}   
-\subtitle{joint work with Camille Laurent-Gengoux}   
+\subtitle{joint work with Camille Laurent-Gengoux\\(Université de Lorraine)\\Work in progress}   
 \author{Simon-Raphael Fischer} 
 \institute{
 \begin{figure}
@@ -328,37 +328,37 @@ Following the flows in $\mathcal{F}$, this gives rise to a partition of connecte
 
 \end{frame}
 
-{
-\setbeamertemplate{footline}
-{
-  \leavevmode%
-  \hbox{%
-  \begin{beamercolorbox}[wd=.09\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-    \usebeamerfont{author in head/foot}
-		Sources
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.91\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-    \usebeamerfont{title in head/foot}
-		Private communication with Camille Laurent-Gengoux.
-  \end{beamercolorbox}%
-  %\begin{beamercolorbox}[wd=.175\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-    %\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
-    %%\insertframenumber{} 
-		%%/ \inserttotalframenumber\hspace*{2ex} 
-  %\end{beamercolorbox}
-	}%
-  \vskip0pt%
-}
-\begin{frame}{Why finitely generated?}
-
-\begin{figure}[htbp]
-	\centering
-		\includegraphics[width=0.50\textwidth]{Infinite comb.png}
-	\caption{Infinite Comb}
-	\label{fig:Infinite comb}
-\end{figure}
-\end{frame}
-}
+%{
+%\setbeamertemplate{footline}
+%{
+  %\leavevmode%
+  %\hbox{%
+  %\begin{beamercolorbox}[wd=.09\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    %\usebeamerfont{author in head/foot}
+		%Sources
+  %\end{beamercolorbox}%
+  %\begin{beamercolorbox}[wd=.91\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    %\usebeamerfont{title in head/foot}
+		%Private communication with Camille Laurent-Gengoux.
+  %\end{beamercolorbox}%
+  %%\begin{beamercolorbox}[wd=.175\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    %%\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    %%%\insertframenumber{} 
+		%%%/ \inserttotalframenumber\hspace*{2ex} 
+  %%\end{beamercolorbox}
+	%}%
+  %\vskip0pt%
+%}
+%\begin{frame}{Why finitely generated?}
+%
+%\begin{figure}[htbp]
+	%\centering
+		%\includegraphics[width=0.50\textwidth]{Infinite comb.png}
+	%\caption{Infinite Comb}
+	%\label{fig:Infinite comb}
+%\end{figure}
+%\end{frame}
+%}
 
 \subsection{Idea: Relation to gauge theory}
 
@@ -451,19 +451,22 @@ Fix $l$ and given $\tau_l$: Reconstruct $\mathcal{F}$.
 \bas
 \mleft[ X^\uparrow + \overline{\nu}, {X^\prime}^\uparrow + \overline{\mu} \mright]
 &=
+\mleft[ X, X' \mright]^\uparrow + 
+%\overline{\vphantom{d}
+\dots
+%}
+\\
+&=
 \underbrace{\mleft[ X^\uparrow, {X^\prime}^\uparrow \mright]}_{\rightsquigarrow \text{ curvature}}
 	+ \underbrace{\mleft[ X^\uparrow, \overline{\mu} \mright]
 	- \mleft[ {X^\prime}^\uparrow, \overline{\nu} \mright]}_{\rightsquigarrow \text{ connection}}
 	+ \overline{\mleft[ \nu, \mu \mright]}
-\\
-&\stackrel{!}{=}
-\mleft[ X, X' \mright]^\uparrow + \overline{\vphantom{d}\dots}
 \eas
 \end{idea}
 \end{frame}
 }
 
-\section{Yang-Mills connections}
+\section{Curved Yang-Mills gauge theory}
 \subsection{Principal bundles based on Lie group bundle actions}
 {
 \setbeamertemplate{footline}{}
@@ -471,7 +474,7 @@ Fix $l$ and given $\tau_l$: Reconstruct $\mathcal{F}$.
 \begin{frame}
 \thispagestyle{empty}
 \begin{center}
-\textbf{\Large Yang-Mills connections}
+\textbf{\Large Curved Yang-Mills gauge theory}
 \end{center}
 \end{frame}
 
@@ -947,7 +950,7 @@ where $\zeta \in \Omega^2(L; \mathcal{g})$.
 \begin{idea}[Leaf $L$ simply connected]
 Fix a point $l \in L$ with transverse model $\mleft(\mathbb{R}^d, \tau_l\mright)$:
 \begin{enumerate}
-	\item $G$ a subgroup of $\mathrm{Inn}(\tau_l)$
+	\item $G = \mathrm{Inn}(\tau_l)$
 	\pause
 	\item $P$ a principal $G$-bundle, equipped with an ordinary connection
 	%\pause
@@ -962,7 +965,10 @@ Fix a point $l \in L$ with transverse model $\mleft(\mathbb{R}^d, \tau_l\mright)
 \pause
 
 \begin{remark}
-Think of the induced connection on $\mathcal{T}$ as the $\mathcal{F}$-connection.
+\begin{itemize}
+	\item Think of the induced connection on $\mathcal{T}$ as the $\mathcal{F}$-connection.
+	\item $\mathcal{G}$ acts on $\mathcal{T}$ (canonically from the left).
+\end{itemize}
 \end{remark}
 
 \end{frame}
@@ -994,6 +1000,8 @@ $\mathcal{P} \coloneqq (P \times P) \Big/ G$, the \textbf{Atiyah groupoid}, is a
 	\end{tikzcd}
 \end{center}
 where $t$ and $s$ are the target and source arrows, respectively.
+
+A connection on $P$ induces an Ehresmann connection on $\mathcal{P}$.
 \end{lemma}
 \end{frame}
 

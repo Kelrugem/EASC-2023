@@ -1,12 +1,12 @@
 \babel@toc {english}{}\relax 
 \beamer@sectionintoc {1}{Singular Foliations}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Definition}{6}{0}{1}
-\beamer@subsectionintoc {1}{2}{Idea: Relation to gauge theory}{12}{0}{1}
-\beamer@sectionintoc {2}{Yang-Mills connections}{18}{0}{2}
-\beamer@subsectionintoc {2}{1}{Principal bundles based on Lie group bundle actions}{18}{0}{2}
-\beamer@subsectionintoc {2}{2}{Connections as parallel transport}{23}{0}{2}
-\beamer@subsectionintoc {2}{3}{General notion of Ehresmann and Yang-Mills connections}{30}{0}{2}
-\beamer@sectionintoc {3}{Foliations and Yang-Mills connections}{37}{0}{3}
-\beamer@subsectionintoc {3}{1}{Reconstructing Foliations}{37}{0}{3}
-\beamer@subsectionintoc {3}{2}{Independency of choice of connection}{46}{0}{3}
-\beamer@sectionintoc {4}{Conclusion}{53}{0}{4}
+\beamer@subsectionintoc {1}{2}{Idea: Relation to gauge theory}{11}{0}{1}
+\beamer@sectionintoc {2}{Curved Yang-Mills gauge theory}{17}{0}{2}
+\beamer@subsectionintoc {2}{1}{Principal bundles based on Lie group bundle actions}{17}{0}{2}
+\beamer@subsectionintoc {2}{2}{Connections as parallel transport}{22}{0}{2}
+\beamer@subsectionintoc {2}{3}{General notion of Ehresmann and Yang-Mills connections}{29}{0}{2}
+\beamer@sectionintoc {3}{Foliations and Yang-Mills connections}{36}{0}{3}
+\beamer@subsectionintoc {3}{1}{Reconstructing Foliations}{36}{0}{3}
+\beamer@subsectionintoc {3}{2}{Independency of choice of connection}{45}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{52}{0}{4}
